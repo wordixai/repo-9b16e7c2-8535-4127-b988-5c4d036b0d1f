@@ -67,5 +67,5 @@ export default function Hero() {
       <div className="absolute top-1/3 right-32 w-6 h-6 bg-emerald-400 rounded-full animate-float delay-500" />
       <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-primary rounded-full animate-float delay-1000" />
     </section>
-  );
+  
 }
