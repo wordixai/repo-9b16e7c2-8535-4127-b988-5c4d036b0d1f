@@ -2,16 +2,18 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Bot, ArrowRight } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="p-2 rounded-lg bg-gradient-primary">
               <Bot className="w-6 h-6 text-primary-foreground" />
             </div>
@@ -19,16 +21,23 @@ export default function Navigation() {
             <Badge variant="secondary" className="ml-2 text-xs">
               Beta
             </Badge>
-          </div>
+          </Link>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link 
+              to="/pricing" 
+              className={`transition-colors ${
+                location.pathname === '/pricing' 
+                  ? 'text-foreground font-medium' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
               Pricing
-            </a>
+            </Link>
             <a href="#demo" className="text-muted-foreground hover:text-foreground transition-colors">
               Demo
             </a>
@@ -66,9 +75,17 @@ export default function Navigation() {
               <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
                 Features
               </a>
-              <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link 
+                to="/pricing" 
+                className={`transition-colors ${
+                  location.pathname === '/pricing' 
+                    ? 'text-foreground font-medium' 
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
                 Pricing
-              </a>
+              </Link>
               <a href="#demo" className="text-muted-foreground hover:text-foreground transition-colors">
                 Demo
               </a>
