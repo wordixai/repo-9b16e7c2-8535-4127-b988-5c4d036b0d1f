@@ -25,9 +25,9 @@ export default function Hero() {
           on autopilot
         </h1>
         
-        <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-          with <span className="font-bold gradient-text">Smart AI</span>
-        </p>
+        
+
+
         
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
           Automate guest communication, pricing optimization, and property management with our intelligent AI assistant. 
@@ -66,6 +66,6 @@ export default function Hero() {
       <div className="absolute top-1/4 left-20 w-4 h-4 bg-primary rounded-full animate-float" />
       <div className="absolute top-1/3 right-32 w-6 h-6 bg-emerald-400 rounded-full animate-float delay-500" />
       <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-primary rounded-full animate-float delay-1000" />
-    </section>
-  );
+    </section>);
+
 }
