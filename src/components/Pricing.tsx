@@ -71,9 +71,9 @@ export default function Pricing() {
             <br />
             <span className="gradient-text">automation level</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Start free, scale as you grow. No hidden fees, cancel anytime.
-          </p>
+          
+
+
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -132,9 +132,9 @@ export default function Pricing() {
         </div>
         
         <div className="mt-16 text-center">
-          
-
-
+          <p className="text-sm text-muted-foreground mb-4">
+            All plans include 14-day free trial • No setup fees • Cancel anytime
+          </p>
           <p className="text-xs text-muted-foreground">
             Enterprise customers save an average of $2,400/month in operational costs
           </p>
