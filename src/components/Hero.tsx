@@ -20,14 +20,14 @@ export default function Hero() {
         <h1 className="text-6xl lg:text-8xl font-bold mb-6 leading-tight">
           Put your
           <br />
-          <span className="gradient-text">vacation rental</span>
+          
           <br />
           on autopilot
         </h1>
         
-        
-
-
+        <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          with <span className="font-bold gradient-text">Smart AI</span>
+        </p>
         
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
           Automate guest communication, pricing optimization, and property management with our intelligent AI assistant. 
