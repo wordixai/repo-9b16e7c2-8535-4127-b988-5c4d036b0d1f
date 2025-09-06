@@ -20,7 +20,7 @@ export default function Hero() {
         <h1 className="text-6xl lg:text-8xl font-bold mb-6 leading-tight">
           Put your
           <br />
-          
+          <span className="gradient-text">vacation rental</span>
           <br />
           on autopilot
         </h1>
@@ -29,10 +29,10 @@ export default function Hero() {
           with <span className="font-bold gradient-text">Smart AI</span>
         </p>
         
-        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Automate guest communication, pricing optimization, and property management with our intelligent AI assistant. 
-          Maximize revenue while minimizing your workload.
-        </p>
+        
+
+
+
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button size="lg" className="gradient-bg hero-glow animate-pulse-glow px-8 py-4 text-lg font-semibold">
