@@ -65,11 +65,11 @@ export default function Features() {
             <Clock className="w-4 h-4 mr-2" />
             Complete Automation
           </Badge>
-          
-
-
-
-
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            Everything you need to
+            <br />
+            <span className="gradient-text">scale your business</span>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Our AI handles the day-to-day operations so you can focus on growing your portfolio
           </p>
@@ -107,9 +107,9 @@ export default function Features() {
           <div className="inline-flex items-center gap-4 p-6 rounded-2xl bg-gradient-primary">
             <TrendingUp className="w-8 h-8 text-primary-foreground" />
             <div className="text-left">
-              <p className="text-lg font-semibold text-primary-foreground">
-                Average 35% revenue increase
-              </p>
+              
+
+
               <p className="text-primary-foreground/80">
                 in the first 3 months of automation
               </p>
