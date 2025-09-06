@@ -68,11 +68,11 @@ export default function Features() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Everything you need to
             <br />
-            <span className="gradient-text">scale your business</span>
+            
           </h2>
-          
-
-
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Our AI handles the day-to-day operations so you can focus on growing your portfolio
+          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
